@@ -17,6 +17,7 @@ object Api
   private implicit val system = ActorSystem("api")
   private implicit val materializer = ActorMaterializer()
   private implicit val executionContext = system.dispatcher
+
   private val interface = "0.0.0.0"
   private val port = Properties.envOrElse("PORT", "8080").toInt
 
