@@ -18,5 +18,8 @@ object Api
   private implicit val materializer = ActorMaterializer()
   private implicit val executionContext = system.dispatcher
 
-  val bindingFuture = Http().bindAndHandle(generalRoute.route, "localhost", 8080)
+  private val interface = "localhost"
+  private val port = 8080
+
+  val bindingFuture = Http().bindAndHandle(generalRoute.route, interface, port)
 }
