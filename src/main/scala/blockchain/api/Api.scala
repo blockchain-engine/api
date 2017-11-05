@@ -5,7 +5,6 @@ import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
 import blockchain.api.routing.{DefaultGeneralRouteComponent, DefaultUserRouteComponent}
 
-
 object Api
   extends App
     with DefaultGeneralRouteComponent
@@ -19,7 +18,7 @@ object Api
   private implicit val executionContext = system.dispatcher
 
   private val interface = "localhost"
-  private val port = 8080
+  private val port = 9000
 
   val bindingFuture = Http().bindAndHandle(generalRoute.route, interface, port)
 }
