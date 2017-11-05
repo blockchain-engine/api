@@ -1,0 +1,10 @@
+language: scala
+
+scala:
+   - 2.11.8
+   - 2.11.2
+   - 2.10.4
+
+notifications:
+  email:
+    - zakolenko.roman@gmail.com
