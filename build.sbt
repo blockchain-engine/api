@@ -1,3 +1,5 @@
+enablePlugins(JavaAppPackaging)
+
 name := "api"
 
 version := "1.0"
